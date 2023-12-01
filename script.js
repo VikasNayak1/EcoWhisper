@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch(weatherApiUrl);
         const data = await response.json();
 
-        // Convert temperature from Kelvin to Celsius
+        
         const temperatureCelsius = (data.main.temp - 273.15).toFixed(2);
 
-        // Update your weather data with location name
+       
         const weatherData = `Location: ${data.name}\nTemperature: ${temperatureCelsius} °C, Description: ${data.weather[0].description}`;
         document.getElementById("weather-data").innerText = weatherData;
       } catch (error) {
