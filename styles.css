@@ -1,0 +1,168 @@
+.header-content {
+  position: fixed;
+  background: linear-gradient(135deg, rgb(227, 227, 27), rgb(52, 172, 52));
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo img {
+  max-height: 60px; /* Adjust the height of your logo */
+}
+
+.site-name h1 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  
+}
+
+.weather-info {
+  color: white;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #FFD700; /* Change color on hover */
+  
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.pimg1 {
+  background-image: url(images/image1.jpg);
+  min-height: 100vh;
+}
+.pimg2 {
+  background-image: url(images/image2.jpg);
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url(images/image3.jpg);
+  min-height: 400px;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  
+}
+.textBg {
+  background: linear-gradient(150deg, rgb(28, 185, 28), rgb(210, 160, 67));
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+}
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .header-content {
+    height: auto;
+    padding: 10px; 
+  }
+
+  .logo img {
+    max-height: 40px; 
+  }
+
+  .site-name h1 {
+    font-size: 18px; 
+  }
+
+  .weather-info {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column; 
+  }
+
+  nav ul li {
+    margin-right: 0; 
+    margin-bottom: 10px;
+  }
+
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    min-height: 300px;
+  }
+
+  .ptext {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 30px;
+  }
+}
