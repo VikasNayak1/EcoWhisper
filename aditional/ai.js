@@ -39,7 +39,7 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+        messageElement.textContent = "Oops! Something went wrong. Please try again. The api key is public so not working please contact hackathon team team";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
